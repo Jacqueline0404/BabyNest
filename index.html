@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeasonNest – Climate‑Smart Baby Prep</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom palette -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#d16d7a',
+              secondary: '#c8e7d4',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans antialiased text-gray-800 scroll-smooth">
+    <!-- ─── Navigation ──────────────────────────────────────────── -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="#top" class="text-2xl font-bold text-primary">SeasonNest</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#personas" class="hover:text-primary">Who&nbsp;It's&nbsp;For</a>
+          <a href="#how" class="hover:text-primary">How&nbsp;It&nbsp;Works</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+        <a href="#contact" class="md:hidden inline-flex items-center px-4 py-2 bg-primary text-white rounded-xl shadow-sm hover:bg-primary/90 transition">Let's&nbsp;Talk</a>
+      </div>
+    </header>
+
+    <!-- ─── Hero ─────────────────────────────────────────────────── -->
+    <section id="top" class="relative pt-32 md:pt-40 pb-20 md:pb-32 flex items-center justify-center text-center text-white" style="background-image:url('https://images.unsplash.com/photo-1542385151-efd9000785a0?w=1200&auto=format&fit=crop&q=60');background-size:cover;background-position:center;">
+      <div class="absolute inset-0 bg-primary/70"></div>
+      <div class="relative z-10 max-w-2xl px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">Take the Mental Load Out of Baby Prep</h1>
+        <p class="text-lg md:text-xl mb-8">SeasonNest uses AI to build the perfect, climate‑smart shopping list for your baby’s first 24&nbsp;months—so you buy just what you need, when you need it.</p>
+        <a href="#contact" class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-2xl shadow-lg hover:bg-gray-100 transition">Get&nbsp;Early&nbsp;Access</a>
+      </div>
+    </section>
+
+    <!-- ─── Features ─────────────────────────────────────────────── -->
+    <section id="features" class="py-20 bg-secondary/25">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Parents Love SeasonNest</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Climate‑Smart Lists -->
+          <div class="flex flex-col md:flex-row items-start gap-6">
+            <img src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=600&auto=format&fit=crop&q=60" alt="Neatly arranged baby clothes" class="w-full md:w-40 h-40 md:h-auto rounded-2xl shadow-lg object-cover" />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Climate‑Smart Lists</h3>
+              <p>AI predicts local weather for every growth spurt—no more fleece in July.</p>
+            </div>
+          </div>
+          <!-- Shared Progress Bar -->
+          <div class="flex flex-col md:flex-row items-start gap-6">
+            <img src="https://images.unsplash.com/photo-1596510914841-40223e421e29?w=600&auto=format&fit=crop&q=60" alt="Dad smiling with baby" class="w-full md:w-40 h-40 md:h-auto rounded-2xl shadow-lg object-cover" />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Shared Progress Bar</h3>
+              <p>Partners and relatives can help without duplicate gifts or guesswork.</p>
+            </div>
+          </div>
+          <!-- Right‑Sized Quantities -->
+          <div class="flex flex-col md:flex-row items-start gap-6">
+            <img src="https://images.unsplash.com/photo-1624272887610-dbf9bc1483f7?w=600&auto=format&fit=crop&q=60" alt="Baby clapping" class="w-full md:w-40 h-40 md:h-auto rounded-2xl shadow-lg object-cover" />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Right‑Sized Quantities</h3>
+              <p>Buy only what baby will outgrow—saving cash and closet space.</p>
+            </div>
+          </div>
+          <!-- Local Store Integration -->
+          <div class="flex flex-col md:flex-row items-start gap-6">
+            <img src="https://images.unsplash.com/photo-1656338795430-11f632cb169b?w=600&auto=format&fit=crop&q=60" alt="Baby outfits on rail" class="w-full md:w-40 h-40 md:h-auto rounded-2xl shadow-lg object-cover" />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Local Store Integration</h3>
+              <p>Check real‑time stock at nearby shops or tap to order online.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Personas ─────────────────────────────────────────────── -->
+    <section id="personas" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Who We Help</h2>
+        <p class="text-center mb-12 max-w-3xl mx-auto">From first‑time mums juggling advice overload to partners eager to share the load, SeasonNest brings clarity and confidence to everyone on the baby‑prep journey.</p>
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="p-6 bg-secondary/25 rounded-2xl shadow"><h3 class="font-semibold mb-2">Overloaded First‑Time Mum</h3><p class="text-sm">Stress‑free, season‑proof lists.</p></div>
+          <div class="p-6 bg-secondary/25 rounded-2xl shadow"><h3 class="font-semibold mb-2">Hands‑On Partner</h3><p class="text-sm">Shared roadmap to pitch in.</p></div>
+          <div class="p-6 bg-secondary/25 rounded-2xl shadow"><h3 class="font-semibold mb-2">Remote Gift‑Giver</h3><p class="text-sm">Know exactly what’s needed.</p></div>
+          <div class="p-6 bg-secondary/25 rounded-2xl shadow"><h3 class="font-semibold mb-2">Local Retailer</h3><p class="text-sm">Reach ready‑to‑buy parents.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── How It Works ─────────────────────────────────────────── -->
+    <section id="how" class="py-20 bg-secondary/50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">How It Works</h2>
+        <ol class="relative border-l-4 border-primary ml-4 space-y-10">
+          <li class="pl-6"><span class="absolute -left-3 top-1.5 w-6 h-6 bg-primary rounded-full"></span><h3 class="text-lg font-semibold mb-1">Tell Us Your Due Date & Location</h3><p class="text-sm text-gray-700">60‑second onboarding—no spreadsheets required.</p></li>
+          <li class="pl-6"><span class="absolute -left-3 top-1.5 w-6 h-6 bg-primary rounded-full"></span><h3 class="text-lg font-semibold mb-1">AI Generates Your Smart Checklist</h3><p class="text-sm text-gray-700">Tailored quantities, fabrics and timing.</p></li>
+          <li class="pl-6"><span class="absolute -left-3 top-1.5 w-6 h-6 bg-primary rounded-full"></span><h3 class="text-lg font-semibold mb-1">Track, Shop, Share</h3><p class="text-sm text-gray-700">Tick items off, invite helpers and buy locally or online.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─── Gallery (images only) ───────────────────────────────── -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <img src="https://images.unsplash.com/photo-1470843810958-2da815d0e041?w=700&auto=format&fit=crop&q=60" alt="Happy mother and baby" class="rounded-2xl shadow object-cover w-full h-60" />
+          <img src="https://images.unsplash.com/photo-1685633224499-dd3759500e8f?w=700&auto=format&fit=crop&q=60" alt="Father lifting baby" class="rounded-2xl shadow object-cover w-full h-60" />
+          <img src="https://images.unsplash.com/photo-162427288761
